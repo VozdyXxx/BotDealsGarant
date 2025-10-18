@@ -1,0 +1,181 @@
+<svg width="900" height="650" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Градиенты в стиле GitHub Dark -->
+    <linearGradient id="mainBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#161b22"/>
+      <stop offset="100%" style="stop-color:#0d1117"/>
+    </linearGradient>
+    
+    <linearGradient id="blockBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#161b22"/>
+      <stop offset="100%" style="stop-color:#0d1117"/>
+    </linearGradient>
+    
+    <!-- Тень для блоков -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Основной фон -->
+  <rect width="900" height="650" fill="#0d1117"/>
+  
+  <!-- Главный контейнер с градиентом и свечением -->
+  <rect x="50" y="40" width="800" height="570" rx="12" fill="url(#mainBg)" 
+        stroke="#30363d" stroke-width="2" filter="url(#glow)"/>
+  
+  <!-- Заголовок -->
+  <text x="450" y="90" font-family="Segoe UI, Arial, sans-serif" font-size="24" 
+        font-weight="bold" text-anchor="middle" fill="#58a6ff" letter-spacing="0.5px">
+    🛡️ BotDealsGarant Architecture
+  </text>
+  
+  <!-- Верхний уровень: Users -> Bot Core -> Admin Panel -->
+  <line x1="100" y1="140" x2="800" y2="140" stroke="#21262d" stroke-width="1"/>
+  
+  <!-- Users блок -->
+  <text x="200" y="165" font-family="Segoe UI, Arial, sans-serif" font-size="18" 
+        font-weight="bold" text-anchor="middle" fill="#e6edf3">
+    👥 Users
+  </text>
+  <text x="200" y="185" font-family="Segoe UI, Arial, sans-serif" font-size="14" 
+        text-anchor="middle" fill="#8b949e">
+    (Multilang)
+  </text>
+  
+  <!-- Стрелка 1 -->
+  <text x="280" y="175" font-family="Arial, sans-serif" font-size="20" 
+        text-anchor="middle" fill="#6cb6ff">
+    ►
+  </text>
+  
+  <!-- Bot Core блок -->
+  <text x="450" y="165" font-family="Segoe UI, Arial, sans-serif" font-size="18" 
+        font-weight="bold" text-anchor="middle" fill="#e6edf3">
+    🤖 Bot Core
+  </text>
+  <text x="450" y="185" font-family="Segoe UI, Arial, sans-serif" font-size="14" 
+        text-anchor="middle" fill="#8b949e">
+    (Aiogram FSM)
+  </text>
+  
+  <!-- Стрелка 2 -->
+  <text x="580" y="175" font-family="Arial, sans-serif" font-size="20" 
+        text-anchor="middle" fill="#6cb6ff">
+    ►
+  </text>
+  
+  <!-- Admin Panel блок -->
+  <text x="700" y="165" font-family="Segoe UI, Arial, sans-serif" font-size="18" 
+        font-weight="bold" text-anchor="middle" fill="#e6edf3">
+    👨‍💼 Admin Panel
+  </text>
+  <text x="700" y="185" font-family="Segoe UI, Arial, sans-serif" font-size="14" 
+        text-anchor="middle" fill="#8b949e">
+    (Management)
+  </text>
+  
+  <!-- Разделительная линия -->
+  <line x1="100" y1="210" x2="800" y2="210" stroke="#21262d" stroke-width="1"/>
+  
+  <!-- Handlers блок -->
+  <rect x="200" y="240" width="500" height="80" rx="10" fill="#161b22" 
+        stroke="#21262d" stroke-width="1"/>
+  
+  <text x="450" y="265" font-family="Segoe UI, Arial, sans-serif" font-size="16" 
+        font-weight="bold" text-anchor="middle" fill="#9ecbff">
+    📱 Handlers
+  </text>
+  
+  <!-- Модули в handlers -->
+  <rect x="250" y="275" width="400" height="30" rx="8" fill="#0d1117" 
+        stroke="#21262d" stroke-width="1"/>
+  <text x="450" y="295" font-family="monospace, Consolas" font-size="14" 
+        text-anchor="middle" fill="#e6edf3">
+    Main │ Deals │ Pay │ Menu │ Logic │ API
+  </text>
+  
+  <!-- Нижние блоки -->
+  <!-- SQLite Database блок -->
+  <rect x="150" y="380" width="250" height="160" rx="10" fill="#161b22" 
+        stroke="#21262d" stroke-width="1"/>
+  
+  <text x="275" y="410" font-family="Segoe UI, Arial, sans-serif" font-size="16" 
+        font-weight="bold" text-anchor="middle" fill="#9ecbff">
+    🗄️ SQLite Database
+  </text>
+  
+  <!-- Список для Database -->
+  <text x="170" y="440" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#58a6ff">•</text>
+  <text x="185" y="440" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#e6edf3">User Data</text>
+  
+  <text x="170" y="465" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#58a6ff">•</text>
+  <text x="185" y="465" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#e6edf3">Transactions</text>
+  
+  <text x="170" y="490" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#58a6ff">•</text>
+  <text x="185" y="490" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#e6edf3">Deal History</text>
+  
+  <text x="170" y="515" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#58a6ff">•</text>
+  <text x="185" y="515" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#e6edf3">User Preferences</text>
+  
+  <!-- External APIs блок -->
+  <rect x="450" y="380" width="250" height="160" rx="10" fill="#161b22" 
+        stroke="#21262d" stroke-width="1"/>
+  
+  <text x="575" y="410" font-family="Segoe UI, Arial, sans-serif" font-size="16" 
+        font-weight="bold" text-anchor="middle" fill="#9ecbff">
+    🌐 External APIs
+  </text>
+  
+  <!-- Список для External APIs -->
+  <text x="470" y="440" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#58a6ff">•</text>
+  <text x="485" y="440" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#e6edf3">CryptoBot</text>
+  
+  <text x="470" y="465" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#58a6ff">•</text>
+  <text x="485" y="465" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#e6edf3">Telegram API</text>
+  
+  <text x="470" y="490" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#58a6ff">•</text>
+  <text x="485" y="490" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#e6edf3">Currency Exchange</text>
+  
+  <text x="470" y="515" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#58a6ff">•</text>
+  <text x="485" y="515" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#e6edf3">Payment Processing</text>
+  
+  <!-- Стрелки от handlers к нижним блокам -->
+  <path d="M 350 320 L 275 380" stroke="#6cb6ff" stroke-width="2" fill="none"/>
+  <polygon points="275,380 280,370 270,375" fill="#6cb6ff"/>
+  
+  <path d="M 550 320 L 575 380" stroke="#6cb6ff" stroke-width="2" fill="none"/>
+  <polygon points="575,380 570,370 580,375" fill="#6cb6ff"/>
+  
+  <!-- Подписи к стрелкам -->
+  <text x="310" y="355" font-family="Segoe UI, Arial, sans-serif" font-size="11" 
+        text-anchor="middle" fill="#8b949e">
+    Data Storage
+  </text>
+  
+  <text x="565" y="355" font-family="Segoe UI, Arial, sans-serif" font-size="11" 
+        text-anchor="middle" fill="#8b949e">
+    External Calls
+  </text>
+  
+  <!-- Технологический стек внизу -->
+  <rect x="100" y="570" width="700" height="40" rx="8" fill="#21262d"/>
+  <text x="120" y="585" font-family="Segoe UI, Arial, sans-serif" font-size="12" 
+        font-weight="bold" fill="#58a6ff">
+    🚀 Tech Stack:
+  </text>
+  <text x="120" y="600" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#e6edf3">
+    Python 3.9+ • Aiogram 2.25+ • SQLite • AsyncIO • CryptoBot API • Telegram Bot API
+  </text>
+  
+  <!-- Водяной знак -->
+  <text x="780" y="630" font-family="Segoe UI, Arial, sans-serif" font-size="10" 
+        text-anchor="end" fill="#6e7681">
+    BotDealsGarant v1.0
+  </text>
+</svg>
+</svg>

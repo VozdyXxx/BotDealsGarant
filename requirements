@@ -1,0 +1,5 @@
+aiogram==2.25
+python-dotenv==1.0
+loguru==0.7
+aiohttp==3.8
+python-telegram-bot==20.6
