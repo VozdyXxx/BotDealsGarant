@@ -127,3 +127,32 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Project specific files
+*.db
+*.db-journal
+*.log
+logger.log
+bot_garant*.db
+*copy.db
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary files
+*.tmp
+*.temp
+temp/
+tmp/
+
+# Setup instructions (remove after setup)
+WIKI_SETUP.md
