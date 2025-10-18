@@ -108,16 +108,16 @@ BotDealsGarant/
 │   ├── 🎨 architecture-simple.svg # Clean architecture diagram
 │   ├── 🎨 architecture.svg   # Detailed system diagram
 │   └── 🎬 1018.gif           # Demo animation
-└── � .github/               # GitHub templates
-    ├── � pull_request_template.md
-    └── 📂 ISSUE_TEMPLATE/
-        ├── � bug_report.md
-        ├── 💡 feature_request.md
-        ├── ❓ question.md
-        └── ⚙️ config.yml
+│   └── 📝 .gitkeep           # Keep directory in git
+└── 📂 .github/               # Repository automation
+    ├── 📂 workflows/          # GitHub Actions
+    │   ├── 🛡️ access-control.yml    # Auto-block unauthorized access
+    │   └── � issue-protection.yml  # Issue spam protection
+    └── 📂 ISSUE_TEMPLATE/     # Contact configuration
+        └── ⚙️ config.yml      # Redirect to direct contacts
 ```
 
-> **Note**: After installation, the bot will create `bot_garant.db` (SQLite database) and `.env` (your configuration) files automatically.
+> **Note**: After installation, the bot will create `bot_garant.db` (SQLite database) and `.env` (your configuration) files automatically. Cache files (`__pycache__/`) are automatically ignored.
 
 ## 💻 Installation
 
@@ -310,8 +310,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - 👨‍💻 **Developer**: [@VozdyXxx](https://github.com/VozdyXxx)
 - 💬 **Telegram**: [@Breathe_VozdyX](https://t.me/Breathe_VozdyX) - Primary support channel
 - 📧 **Email**: 12lamiya34@gmail.com - Bug reports and feature requests
-- � **Support Guide**: [How to Report Issues](SUPPORT_GUIDE.md) - Read before contacting
-- �📖 **Documentation**: [Project Wiki](https://github.com/VozdyXxx/BotDealsGarant/wiki)
+- 📖 **Documentation**: [Project Wiki](https://github.com/VozdyXxx/BotDealsGarant/wiki)
 - ℹ️ **Note**: Issues are disabled - use direct contact methods above
 
 ## 🚀 Roadmap
