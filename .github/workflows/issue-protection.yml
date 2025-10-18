@@ -1,0 +1,90 @@
+name: 🔒 Issue Protection
+
+on:
+  issues:
+    types: [opened, edited]
+  issue_comment:
+    types: [created, edited]
+
+jobs:
+  protect-issues:
+    runs-on: ubuntu-latest
+    if: github.actor != 'VozdyXxx' && !contains(fromJson('["VozdyXxx"]'), github.actor)
+    
+    steps:
+      - name: 🚫 Close unauthorized issue modifications
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { owner, repo } = context.repo;
+            const issueNumber = context.payload.issue?.number;
+            
+            if (issueNumber) {
+              // Add warning comment
+              await github.rest.issues.createComment({
+                owner,
+                repo,
+                issue_number: issueNumber,
+                body: `⚠️ **Unauthorized Access Detected**
+                
+                This issue has been automatically flagged for review.
+                
+                **Only authorized users can:**
+                - Create issues
+                - Edit existing issues
+                - Modify issue content
+                
+                **For legitimate support requests, please contact:**
+                - 💬 Telegram: [@Breathe_VozdyX](https://t.me/Breathe_VozdyX)
+                - 📧 Email: 12lamiya34@gmail.com
+                
+                This issue will be reviewed by the project maintainer.`
+              });
+              
+              // Lock the issue
+              await github.rest.issues.lock({
+                owner,
+                repo,
+                issue_number: issueNumber,
+                lock_reason: 'spam'
+              });
+              
+              // Add spam label
+              await github.rest.issues.addLabels({
+                owner,
+                repo,
+                issue_number: issueNumber,
+                labels: ['spam', 'needs-review']
+              });
+            }
+
+  notify-admin:
+    runs-on: ubuntu-latest
+    if: github.actor != 'VozdyXxx'
+    
+    steps:
+      - name: 📧 Notify admin of new issue
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { owner, repo } = context.repo;
+            const issueNumber = context.payload.issue?.number;
+            const issueTitle = context.payload.issue?.title;
+            const issueAuthor = context.payload.issue?.user?.login;
+            
+            if (issueNumber) {
+              // Create notification comment for admin
+              await github.rest.issues.createComment({
+                owner,
+                repo,
+                issue_number: issueNumber,
+                body: `🔔 **Admin Notification**
+                
+                @VozdyXxx - New issue requires your attention:
+                - **Issue #${issueNumber}**: ${issueTitle}
+                - **Author**: @${issueAuthor}
+                - **Created**: ${new Date().toLocaleString()}
+                
+                Please review and take appropriate action.`
+              });
+            }
