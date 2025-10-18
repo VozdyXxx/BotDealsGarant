@@ -118,7 +118,7 @@ BotDealsGarant/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/BotDealsGarant.git
+   git clone https://github.com/VozdyXxx/BotDealsGarant.git
    cd BotDealsGarant
    ```
 
@@ -295,11 +295,11 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support & Community
 
-- 📧 **Email**: support@botdealsgarant.com
-- 💬 **Telegram**: [@BotDealsGarantSupport](https://t.me/BotDealsGarantSupport)
-- 🐛 **Bug Reports**: [GitHub Issues](https://github.com/yourusername/BotDealsGarant/issues)
-- 📖 **Documentation**: [Project Wiki](https://github.com/yourusername/BotDealsGarant/wiki)
-- 💡 **Feature Requests**: [Discussions](https://github.com/yourusername/BotDealsGarant/discussions)
+- �‍💻 **Developer**: [@VozdyXxx](https://github.com/VozdyXxx)
+- 💬 **Telegram**: [@Breathe_VozdyX](https://t.me/Breathe_VozdyX)
+- 🐛 **Bug Reports**: [GitHub Issues](https://github.com/VozdyXxx/BotDealsGarant/issues)
+- 📖 **Documentation**: [Project Wiki](https://github.com/VozdyXxx/BotDealsGarant/wiki)
+- 💡 **Feature Requests**: [Discussions](https://github.com/VozdyXxx/BotDealsGarant/discussions)
 
 ## 🚀 Roadmap
 
