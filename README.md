@@ -89,23 +89,35 @@
 
 ```
 BotDealsGarant/
-├── 📂 handlers/                 # Bot command handlers
-│   ├── 🤖 main_menu.py         # Main UI and user interactions
-│   ├── 👨‍💼 admin_menu.py       # Administrative functions
-│   ├── 🤝 buyer.py             # Buyer-specific operations
-│   └── 💳 seller.py            # Seller-specific operations
-├── 📂 utils/                   # Utility modules
-│   ├── 🗄️ sqliter.py          # Database operations
-│   └── ⌨️ keyboards.py         # Interactive keyboards
-├── 📂 assets/                  # Static resources
-│   ├── 🎨 architecture.svg     # System architecture diagram
-│   └── 🎬 1018.gif            # Demo animation
-├── 🔐 .env                    # Environment variables
-├── 🗃️ bot_garant.db           # SQLite database
+├── � README.md               # Project documentation
 ├── 🚀 main.py                 # Application entry point
-├── 📦 loader.py               # Bot initialization
-└── 📋 requirements            # Dependencies list
+├── 📦 loader.py               # Bot initialization & configuration
+├── 📋 requirements            # Python dependencies
+├── 🔐 .env.example            # Environment variables template
+├── 📜 LICENSE                 # Project license
+├── 🚫 .gitignore              # Git ignore patterns
+├── �📂 handlers/               # Bot command handlers
+│   ├── 🤖 main_menu.py       # Main UI and user interactions
+│   ├── 👨‍💼 admin_menu.py     # Administrative functions
+│   ├── 🤝 buyer.py           # Buyer-specific operations
+│   └── 💳 seller.py          # Seller-specific operations
+├── 📂 utils/                  # Utility modules
+│   ├── 🗄️ sqliter.py         # Database operations
+│   └── ⌨️ keyboards.py        # Interactive keyboards
+├── 📂 assets/                 # Static resources
+│   ├── 🎨 architecture-simple.svg # Clean architecture diagram
+│   ├── 🎨 architecture.svg   # Detailed system diagram
+│   └── 🎬 1018.gif           # Demo animation
+└── � .github/               # GitHub templates
+    ├── � pull_request_template.md
+    └── 📂 ISSUE_TEMPLATE/
+        ├── � bug_report.md
+        ├── 💡 feature_request.md
+        ├── ❓ question.md
+        └── ⚙️ config.yml
 ```
+
+> **Note**: After installation, the bot will create `bot_garant.db` (SQLite database) and `.env` (your configuration) files automatically.
 
 ## 💻 Installation
 
