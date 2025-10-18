@@ -277,21 +277,19 @@ python -m pytest tests/performance/
 
 ## 🤝 Contributing
 
-We welcome contributions from the community! Please see our [Contributing Guidelines](CONTRIBUTING.md) for detailed information.
+We welcome contributions from the community! However, this repository has restricted access for security reasons.
 
-### Development Setup
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature-amazing-feature`
-3. Make your changes and add comprehensive tests
-4. Ensure all tests pass: `pytest`
-5. Submit a detailed pull request with description
+**To contribute or suggest improvements:**
+- 💬 **Contact via Telegram**: [@Breathe_VozdyX](https://t.me/Breathe_VozdyX)
+- 📧 **Send detailed proposals to**: 12lamiya34@gmail.com
+- 🔍 **Include in your message**: Description of changes, use cases, and implementation ideas
 
-### Code Standards
-- Follow PEP 8 guidelines and use black formatter
-- Include type hints for all function parameters
-- Add comprehensive docstrings for public functions
-- Maintain test coverage above 85%
-- Document any breaking changes thoroughly
+### Development Guidelines
+If you're interested in contributing, please contact the developer first to discuss:
+- **Code Standards**: PEP 8 compliance, type hints, comprehensive docstrings
+- **Testing Requirements**: Maintain coverage above 85%, include unit tests
+- **Documentation**: Update README and inline documentation for changes
+- **Security Review**: All contributions undergo security assessment
 
 ## 📄 License
 
