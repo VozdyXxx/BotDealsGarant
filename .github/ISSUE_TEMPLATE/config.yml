@@ -2,10 +2,10 @@ blank_issues_enabled: false
 contact_links:
   - name: 💬 Telegram Support
     url: https://t.me/Breathe_VozdyX
-    about: Primary support channel - Direct contact with developer
-  - name: 📧 Email Developer
+    about: Contact developer directly for all support requests
+  - name: 📧 Email Support  
     url: mailto:12lamiya34@gmail.com
-    about: Email support for detailed inquiries and bug reports
-  - name: 🚫 Issues Disabled
+    about: Send detailed bug reports and feature requests via email
+  - name: ℹ️ Issues Disabled
     url: https://t.me/Breathe_VozdyX
-    about: Issues are disabled. Use Telegram or Email for all requests
+    about: Public Issues are disabled - use direct contact methods above
