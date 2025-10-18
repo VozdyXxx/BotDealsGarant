@@ -54,8 +54,36 @@
 ## 🏗️ Architecture
 
 <div align="center">
-  <img src="assets/architecture.svg" alt="System Architecture" width="90%"/>
+  <img src="assets/architecture-simple.svg" alt="System Architecture" width="80%"/>
 </div>
+
+*If the diagram above doesn't display properly, here's the system architecture:*
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                🛡️ BotDealsGarant Architecture                │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  👥 Users  ──────► 🤖 Bot Core ──────► 👨‍💼 Admin Panel      │
+│  (Multilang)      (Aiogram FSM)        (Management)         │
+│                         │                                   │
+│                         ▼                                   │
+│              ┌─────────────────────┐                        │
+│              │     📱 Handlers      │                        │
+│              ├─────────────────────┤                        │
+│              │ Main │ Deals │ Pay │                        │
+│              │ Menu │ Logic │ API │                        │
+│              └─────────────────────┘                        │
+│                         │                                   │
+│              ┌──────────┴──────────┐                        │
+│              ▼                     ▼                        │
+│      🗄️ SQLite Database    🌐 External APIs                 │
+│      • User Data           • CryptoBot                      │
+│      • Transactions        • Telegram API                   │
+│      • Deal History        • Currency Exchange              │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
 
 ### 📁 Project Structure
 
