@@ -310,7 +310,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - 👨‍💻 **Developer**: [@VozdyXxx](https://github.com/VozdyXxx)
 - 💬 **Telegram**: [@Breathe_VozdyX](https://t.me/Breathe_VozdyX) - Primary support channel
 - 📧 **Email**: 12lamiya34@gmail.com - Bug reports and feature requests
-- 📖 **Documentation**: [Project Wiki](https://github.com/VozdyXxx/BotDealsGarant/wiki)
+- � **Support Guide**: [How to Report Issues](SUPPORT_GUIDE.md) - Read before contacting
+- �📖 **Documentation**: [Project Wiki](https://github.com/VozdyXxx/BotDealsGarant/wiki)
 - ℹ️ **Note**: Issues are disabled - use direct contact methods above
 
 ## 🚀 Roadmap
