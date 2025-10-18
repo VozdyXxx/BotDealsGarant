@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Telegram Support
+    url: https://t.me/Breathe_VozdyX
+    about: Quick support via Telegram messenger
+  - name: 📧 Email Developer
+    url: mailto:vozdyx@example.com
+    about: Direct email contact for complex issues

@@ -295,11 +295,11 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support & Community
 
-- �‍💻 **Developer**: [@VozdyXxx](https://github.com/VozdyXxx)
+- 👨‍💻 **Developer**: [@VozdyXxx](https://github.com/VozdyXxx)
 - 💬 **Telegram**: [@Breathe_VozdyX](https://t.me/Breathe_VozdyX)
-- 🐛 **Bug Reports**: [GitHub Issues](https://github.com/VozdyXxx/BotDealsGarant/issues)
+- 🐛 **Bug Reports**: [Create Issue](https://github.com/VozdyXxx/BotDealsGarant/issues/new)
 - 📖 **Documentation**: [Project Wiki](https://github.com/VozdyXxx/BotDealsGarant/wiki)
-- 💡 **Feature Requests**: [Discussions](https://github.com/VozdyXxx/BotDealsGarant/discussions)
+- 💡 **Feature Requests**: [Request Feature](https://github.com/VozdyXxx/BotDealsGarant/issues/new?labels=enhancement&template=feature_request.md)
 
 ## 🚀 Roadmap
 
